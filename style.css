@@ -1,0 +1,246 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: rgb(2, 2, 2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.4)), rgba(148,48,48,.2), 
+    rgba(148,67,67,.4), url(Gal1.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.ham-bar{
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0 0 60%;
+    transition: right .5s cubic-bezier(1,0,0,1);
+}
+
+.change{
+    right:0;
+}
+
+.hamburger-menu{
+    width: 25px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: brown;
+    transition: all 0.3s;
+}
+
+.change .line-1{
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2{
+    opacity: 0;
+}
+.change .line-3{
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.ham-list{
+    text-align: right;
+}
+
+.ham-item{
+    list-style: none;
+    margin: 25px;
+}
+
+.ham-link{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-weight:300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.ham-link::before,
+.ham-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.ham-link::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+.ham-link::before{
+    top: 0;
+    transform-origin: left;
+}
+
+.ham-link:hover::before,
+.ham-link:hover::after{
+    transform: scaleX(1);
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+       fixed = parallax
+       scroll = normal 
+    */
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url("Gal1.jpeg");
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url("Gal2.jpeg");
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url("MW2.jpeg");
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #131516;
+    color: #ddd;
+}
+
+.ptext,
+.border {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+@media(max-width:568px) {
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+        background-attachment: scroll;
+    }
+}
