@@ -30,6 +30,7 @@ html {
     position: fixed;
     top: 0;
     right: -300px;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +39,7 @@ html {
 }
 
 .change{
-    right:0;
+    right: 0px;
 }
 
 .hamburger-menu{
@@ -186,7 +187,7 @@ html {
 .pimg2,
 .pimg3 {
     position: relative;
-    opacity: 0.90;
+    opacity: 0.80;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
