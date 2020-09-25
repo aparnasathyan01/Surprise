@@ -6,14 +6,16 @@ html {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.8em;
-    color: rgb(2, 2, 2);
+    background-color: rgb(29, 29, 29);
     letter-spacing: 2px;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 .ham-bar{
     width: 300px;
@@ -156,77 +158,42 @@ a:hover,
     display: block;
 }
 
-.ptext {
-    position: absolute;
-    top: 50%;
-    width: 100%;
+.header {
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-.pimg1,
-.pimg2,
-.pimg3 {
-    position: relative;
-    opacity: 0.80;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*
-       fixed = parallax
-       scroll = normal 
-    */
-    background-attachment: fixed;
-}
-
-.pimg1 {
-    background-image: url("Gal1.jpeg");
-    min-height: 100%;
-}
-
-.pimg2 {
-    background-image: url("Gal2.jpeg");
-    min-height: 400px;
-}
-
-.pimg3 {
-    background-image: url("MW2.jpeg");
-    min-height: 400px;
-}
-
-.section {
-    text-align: center;
-    padding: 50px 80px;
-}
-
-.section-light {
-    background-color: #f4f4f4;
-    color: #666;
-}
-
-.section-dark {
-    background-color: #131516;
-    color: #ddd;
-}
-
-.ptext,
-.border {
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    padding: 20px;
-}
-
-.ptext .border.trans {
-    background-color: transparent;
-}
-
-@media(max-width:568px) {
-    .pimg1,
-    .pimg2,
-    .pimg3 {
-        background-attachment: scroll;
+    padding: 32px;
+    color: white;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
     }
-}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
