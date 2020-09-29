@@ -169,7 +169,12 @@ a:hover,
 
 .pimg1,
 .pimg2,
-.pimg3 {
+.pimg3,
+.pimg4,
+.pimg5,
+.pimg6,
+.pimg7,
+.pimg8{
     position: relative;
     opacity: 0.80;
     background-position: center;
@@ -189,12 +194,37 @@ a:hover,
 
 .pimg2 {
     background-image: url("Gal2.jpeg");
-    min-height: 400px;
+    min-height: 100%;
 }
 
 .pimg3 {
     background-image: url("MW2.jpeg");
-    min-height: 400px;
+    min-height: 100%;
+}
+
+.pimg4 {
+    background-image: url("MW2.jpeg");
+    min-height: 100%;
+}
+
+.pimg5 {
+    background-image: url("MW2.jpeg");
+    min-height: 100%;
+}
+
+.pimg6 {
+    background-image: url("MW2.jpeg");
+    min-height: 100%;
+}
+
+.pimg7 {
+    background-image: url("MW2.jpeg");
+    min-height: 100%;
+}
+
+.pimg8 {
+    background-image: url("MW2.jpeg");
+    min-height: 100%;
 }
 
 .section {
@@ -226,7 +256,12 @@ a:hover,
 @media(max-width:568px) {
     .pimg1,
     .pimg2,
-    .pimg3 {
+    .pimg3,
+    .pimg4,
+    .pimg5,
+    .pimg6,
+    .pimg7,
+    .pimg8{
         background-attachment: scroll;
     }
 }
