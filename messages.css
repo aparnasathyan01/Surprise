@@ -262,6 +262,6 @@ a:hover,
     .pimg6,
     .pimg7,
     .pimg8{
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
