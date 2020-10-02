@@ -7,6 +7,7 @@ html {
     font-weight: 400;
     line-height: 1.8em;
     letter-spacing: 2px;
+    background-color: black;
 }
 
 *{
@@ -155,4 +156,9 @@ a:hover,
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.vid{
+    margin-top: 10vw;
+    margin-left: 38vw;
 }
