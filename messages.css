@@ -253,7 +253,7 @@ a:hover,
     background-color: transparent;
 }
 
-@media only screen and (max-width:640px) {
+@media (max-width:568px) {
     .pimg1,
     .pimg2,
     .pimg3,
