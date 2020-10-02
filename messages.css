@@ -162,8 +162,8 @@ a:hover,
     width: 100%;
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 27px;
-    letter-spacing: 8px;
+    font-size: 5vw;
+    letter-spacing: 0.5vw;
     text-transform: uppercase;
 }
 
@@ -253,7 +253,7 @@ a:hover,
     background-color: transparent;
 }
 
-@media(max-width:568px) {
+@media only screen and (max-width:640px) {
     .pimg1,
     .pimg2,
     .pimg3,
@@ -263,5 +263,6 @@ a:hover,
     .pimg7,
     .pimg8{
         background-attachment: scroll;
+        max-width: 50%
     }
 }
