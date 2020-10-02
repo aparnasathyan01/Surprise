@@ -162,3 +162,24 @@ a:hover,
     margin-top: 10vw;
     margin-left: 38vw;
 }
+
+.heading{
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    margin-top: 3vw;
+    margin-left: 1vw;
+    font-size: 8vw;
+    text-align: center;
+    line-height: 12vw;
+}
+
+.dp{
+    margin-left: 42vw;
+    margin-top: 1vw;
+}
+
+.dp img{
+    border-radius: 50%;
+}
+
+  
