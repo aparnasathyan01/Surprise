@@ -194,17 +194,17 @@ a:hover,
 }
 
 .pimg2 {
-    background-image: url("images/varun.jpeg");
+    background-image: url("../images/varun.jpeg");
     min-height: 100%;
 }
 
 .pimg3 {
-    background-image: url("images/riri.jpeg");
+    background-image: url("../images/riri.jpeg");
     min-height: 100%;
 }
 
 .pimg4 {
-    background-image: url("images/apps.jpeg");
+    background-image: url("../images/apps.jpeg");
     min-height: 100%;
 }
 
@@ -219,12 +219,12 @@ a:hover,
 }
 
 .pimg7 {
-    background-image: url("images/rakhi.jpeg");
+    background-image: url("../images/rakhi.jpeg");
     min-height: 100%;
 }
 
 .pimg8 {
-    background-image: url("images/kp.jpeg");
+    background-image: url("../images/kp.jpeg");
     min-height: 100%;
 }
 
