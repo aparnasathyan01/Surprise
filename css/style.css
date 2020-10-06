@@ -160,7 +160,7 @@ a:hover,
 
 .vid{
     top: -32.5vw;
-   margin-left: 45vw;
+    margin-left: 50vw;
     margin-right: 14vw;
     position: relative;
 }
@@ -199,11 +199,10 @@ a:hover,
 
 @media only screen and (max-width: 600px) {
 
-    .vid{
-       
+    .vid {
         margin-left: 26vw;
-        margin-top: 50vw;
-        margin-left: 2vw;
+        margin-top: 93vw;
+        margin-left: 32vw;
         margin-right: 6vw;
         position: relative;
         width: 50%;
