@@ -189,7 +189,7 @@ a:hover,
 }
 
 .pimg1 {
-    background-image: url("Gal1.jpeg");
+    background-image: url("../images/Gal1.jpeg");
     min-height: 100%;
 }
 
@@ -209,12 +209,12 @@ a:hover,
 }
 
 .pimg5 {
-    background-image: url("MW2.jpeg");
+    background-image: url("../images/smiline.jpg");
     min-height: 100%;
 }
 
 .pimg6 {
-    background-image: url("MW2.jpeg");
+    background-image: url("../images/MW2.jpeg");
     min-height: 100%;
 }
 
